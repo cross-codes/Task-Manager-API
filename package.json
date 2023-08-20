@@ -1,0 +1,40 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongodb.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "env-cmd nodemon src/index.js",
+    "test": "env-cmd -f ./tests/.env node --experimental-vm-modules ./node_modules/.bin/jest --watch --runInBand"
+  },
+  "jest": {
+    "transform": {},
+    "moduleFileExtensions": [
+      "js",
+      "cjs",
+      "mjs"
+    ],
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^4.16.0",
+    "mongoose": "^5.3.16",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.4",
+    "supertest": "^6.3.3",
+    "validator": "^13.9.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^29.6.2",
+    "nodemon": "^2.0.22"
+  }
+}
